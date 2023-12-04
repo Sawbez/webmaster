@@ -9,6 +9,7 @@
 
 .description {
   display: inherit;
+  flex-direction: row;
   justify-content: inherit;
   align-items: inherit;
   font-size: 0.85rem;
@@ -19,10 +20,11 @@
 }
 
 .description a {
-  display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  color: rgb(var(--link-rgb));
+  text-decoration-line: underline;
 }
 
 .description p {
@@ -168,11 +170,11 @@
   }
 
   .description a {
-    padding: 1rem;
+    padding-left: 0.5rem;
   }
 
   .description p,
-  .description div {
+  .description span {
     display: flex;
     justify-content: center;
     position: fixed;
@@ -195,8 +197,7 @@
     backdrop-filter: blur(24px);
   }
 
-  .description div {
-    align-items: flex-end;
+  .description span {
     pointer-events: none;
     inset: auto 0 0;
     padding: 2rem;
@@ -214,16 +215,6 @@
 @media (min-width: 701px) and (max-width: 1120px) {
   .grid {
     grid-template-columns: repeat(2, 50%);
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .vercelLogo {
-    filter: invert(1);
-  }
-
-  .logo {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
   }
 }
 

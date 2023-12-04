@@ -3,14 +3,14 @@ import styles from './page.module.css'
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
+      <span className={styles.description}>
         <p>
-          Get started by viewing below.&nbsp;
+          Get started with clean energy <a href="/act_now">today</a>.&nbsp;
         </p>
-      </div>
+      </span>
 
       <div className={`${styles.center} ${styles.hero}`}>
-        Clean Energy is the future. Learn more below.
+        Power the Future.
       </div>
 
       <div className={styles.grid}>
