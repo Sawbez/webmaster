@@ -1,8 +1,8 @@
 # Webmaster Project
 
 ## Backend:
-Next.js (with SSR)
+- Next.js (with SSR)
 
 ## Frontend:
-React
-Material UI
+- React
+- Material UI (TBD)
